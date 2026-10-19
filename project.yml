@@ -1,0 +1,31 @@
+name: AB-Player
+options:
+  bundleIdPrefix: com.abplayer
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.3"
+  generateEmptyDirectories: true
+
+targets:
+  AB-Player:
+    type: application
+    platform: macOS
+    sources:
+      - path: AB-Player
+        excludes:
+          - "Resources/Assets.xcassets"
+      - path: AB-Player/Resources/Assets.xcassets
+    settings:
+      base:
+        INFOPLIST_FILE: AB-Player/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        PRODUCT_BUNDLE_IDENTIFIER: com.abplayer.app
+        MARKETING_VERSION: "2.2.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGNING_REQUIRED: "NO"
+        ENABLE_HARDENED_RUNTIME: "NO"
+        SWIFT_VERSION: "5.10"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+        COMBINE_HIDPI_OUTPUT: "YES"

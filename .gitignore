@@ -1,0 +1,20 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+*.xcscmblueprint
+
+# 构建产物与打包
+发布/
+build/
+
+# 系统杂项
+.DS_Store
+
+# 测试音频
+*.mp3
+*.wav
+*.aiff
+*.m4a
+*.flac
